@@ -41,7 +41,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Vercel](https://age-calculator-app-main.vercel.app/)
+- Solution URL: [Vercel](https://age-calculator-app-main-beta-nine.vercel.app/)
 - Live Site URL: [mmalabugin.ru/AgeCalculator](https://mmalabugin.ru/AgeCalculator/)
 
 ## My process
