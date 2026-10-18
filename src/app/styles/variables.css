@@ -1,0 +1,11 @@
+:root {
+  --purple: hsl(259 100% 65%);
+  --red: hsl(0 100% 67%);
+  --white: hsl(0 0% 100%);
+  --grey-100: hsl(0 0% 94%);
+  --grey-200: hsl(0 0% 86%);
+  --grey-500: hsl(0 1% 44%);
+  --black: hsl(0 0% 0%);
+
+  --font: 'Poppins', sans-serif;
+}

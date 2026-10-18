@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: age-calculator-app-main-app
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: age-calculator-app-main-app
+  template:
+    metadata:
+      labels:
+        app: age-calculator-app-main-app
+    spec:
+      containers:
+        - name: age-calculator-app-main-app
+          image: age-calculator-app-main-app:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: NODE_ENV
+              value: "production"
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
+          livenessProbe:
+            httpGet:
+              path: /AgeCalculator/
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 10
